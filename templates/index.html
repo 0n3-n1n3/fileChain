@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FileChain</title>
+    <style>
+        body {
+            background-image: url('/static/background.jpg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background-image: url('/static/bg.jpg');
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FileChain</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="file">Upload File:</label>
+            <input type="file" id="file" name="file" required>
+            <button type="submit">Upload</button>
+        </form>
+        <br>
+        <form action="/retrieve_cid" method="post">
+            <label for="hash">Enter Block Hash:</label>
+            <input type="text" id="hash" name="hash" required>
+            <button type="submit">Get CID</button>
+        </form>
+        <br>
+        <a href="/update_blockchain" style="color: #007bff;">Update Blockchain</a>
+    </div>
+</body>
+</html>
+
