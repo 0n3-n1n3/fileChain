@@ -8,8 +8,7 @@ PreRequisites for this
       touch .env
       nano .env
       (This Opens the in terminal text editor)
-      Type PINATA_JWT_TOKEN = '<api key>
-  -You are set to go ahead
+      Type PINATA_JWT_TOKEN = '<api key>'  You are set to go ahead
 
 Run the following command
   -python3 temp.py
